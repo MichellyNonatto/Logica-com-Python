@@ -1,0 +1,71 @@
+set é uma coleção em python que não tem objetos repetidos, na qual usamos o set para representar conjuntos matemáticos ou eliminar itens duplicado de um interável.
+
+set("abacaxi")
+
+>>> {"a", "b", "c", "x", "i"}
+
+obs: sets podem ser declarados parecidos com dicionários, com chaves '{}'
+
+numeros = {1, 2, 3, 2}
+
+>>> {1, 2, 3}
+
+não é possível manipular um set, para isso prescisamos converter em uma lista.
+
+list(numeros)
+
+numeros = (1, 2, 3)
+
+
+.union() <--- une duas set
+
+.intersection() <--- une duas set conforme os seus semelhantes
+
+.difference <--- retorno o valor que não existe no outro conjunto
+
+.symmetric_difference <--- une todos os valores que tem em um conjunto mas não tem no outro.
+
+.issubeset() <--- verifica qual é o subconjunto.
+
+conjunto_a = {1, 2, 3}
+conjunto_b = {4, 1, 2, 5, 6, 3}
+
+conjunto_a.issubset(conjunto_b)
+>>> True
+
+conjunto_b.issubset(conjunto_a)
+>>> False
+
+.issuperset() <--- verifica qual é o conjunto pai.
+
+conjunto_a.issuperset(conjunto_b)
+>>> False
+
+conjunto_b.issuperset(conjunto_a)
+>>> True
+
+.isdisjoint <--- verifica se dois conuntos tem um intersecção.
+
+conjunto_a = {1, 2, 3, 4, 5}
+conjunto_b = {6, 7, 8, 9}
+conjunto_c = {1, 0}
+
+conjunto_a.isdisjoint(conjunto_b)
+>>> False
+
+conjunto_a.isdisjoint(conjunto_c)
+>>> True
+
+
+.add(valor) <--- é uma função na qual se o valor inserido não existir dentro do set, ele é incrementado no set.
+
+.clear() <--- limpa o set
+
+.copy() <--- copia o set
+
+.discart(valor) <--- apaga o valor dentro do set [essa função não retorna erro caso o número informado não exista]
+
+.pop() <--- ele remove o primeiro elemento do set
+
+
+.remove(valor) <--- tem a mesma funcionalidade do discart porém retorna um erro se o valor inserido não existir no set.
