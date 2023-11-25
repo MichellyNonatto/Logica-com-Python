@@ -1,0 +1,47 @@
+Funções para manipulação de String
+
+.upper() <--- Deixa toda a variável com letras maiúscula. [PYTHON]
+
+.lower() <--- Deixa toda a variável com letras minúsculas. [python]
+
+.title() <--- A primeira letra da variável fica em maiúscula e o restante em minúscula. [Python]
+
+* Eliminantdo espaços em branco
+
+.strip() <--- Tira todos os espaços existentes na variável. [Python]
+
+.lstrip() <--- Adiciona espaço a direita do caracter. [Python ]
+
+.rstrip() <--- Adiciona espaço a esquerda do caracter. [ Python]
+
+* Junções e centralização
+
+.center(valor de caracteres que deseja, oque irá preencher o restante faltante) <--- Essa função serve para centralizar a string entre a quantidade de caracteres que você deseja utilizar. center(10, "#") --- [##Python##]
+
+" ".join(variavel) <--- junta os caracteres desejado entre os caracter dentro da variavel. ".".join(Python) --- P.y.t.h.o.n
+
+------------------------------------------
+
+A função string em Python cria uma cadeia de caracters, ou seja, se pegarmos a variável podemos analiza-la como um array.
+
+nome = "Michelly Nonatto"
+nome[0]
+>>> M
+
+nome[10:]
+>>> Nonatto
+
+nome[1:5]
+>>> ichel
+
+---------------------------------------------
+.ljust(10) <--- Justifica a variável a esquerda
+.rjust(10) <--- Justifica a variável a direita
+
+"Python".rjust(10)
+>>>    Python
+
+.split() <--- Converte um conjunto de string em uma lista sem espaços entre eles.
+nomeCompleto = "Michelly Nonato"
+nomeCompleto.split()
+>>> ['Michelly', 'Nonato']
