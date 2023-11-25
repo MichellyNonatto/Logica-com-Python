@@ -13,7 +13,7 @@ class ListaEncadeada:
         self._tamanho = 0
 
     def adicionar(self, dado):
-        if self.inicio:  # Quando a lista já possui elementeos
+        if self.inicio:  # Quando a lista já possui elementos
 
             ponteiro = self.inicio  # aponta para o primeiro elemento da lista
 
